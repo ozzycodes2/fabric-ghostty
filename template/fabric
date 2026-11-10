@@ -1,0 +1,23 @@
+# $name
+palette = 0=$term.black
+palette = 1=$term.red
+palette = 2=$term.green
+palette = 3=$term.yellow
+palette = 4=$term.blue
+palette = 5=$term.magenta
+palette = 6=$term.cyan
+palette = 7=$term.white
+palette = 8=$term.bright-black
+palette = 9=$term.bright-red
+palette = 10=$term.bright-green
+palette = 11=$term.bright-yellow
+palette = 12=$term.bright-blue
+palette = 13=$term.bright-magenta
+palette = 14=$term.bright-cyan
+palette = 15=$term.bright-white
+background = $canvas
+foreground = $ink
+cursor-color = $primary
+cursor-text = $on-primary
+selection-background = $primary
+selection-foreground = $on-primary

@@ -1,0 +1,1044 @@
+{
+	"version": "0.1.0",
+	"variants": [
+		{
+			"slug": "dusk",
+			"id": "fabric-dusk",
+			"name": "Fabric Dusk",
+			"appearance": "dark"
+		},
+		{
+			"slug": "dawn",
+			"id": "fabric-dawn",
+			"name": "Fabric Dawn",
+			"appearance": "light"
+		}
+	],
+	"ui": [
+		{
+			"slug": "primary",
+			"name": "Primary",
+			"use": "Accent fill for the CTA, emphasis edge, focus ring and selection; never type",
+			"dusk": {
+				"hex": "#ef6306",
+				"rgb": [
+					239,
+					99,
+					6
+				],
+				"hsl": [
+					24,
+					95,
+					48
+				]
+			},
+			"dawn": {
+				"hex": "#ef6306",
+				"rgb": [
+					239,
+					99,
+					6
+				],
+				"hsl": [
+					24,
+					95,
+					48
+				]
+			}
+		},
+		{
+			"slug": "on-primary",
+			"name": "On Primary",
+			"use": "Text and icons on a primary fill, the same near-black on dusk and dawn",
+			"dusk": {
+				"hex": "#171717",
+				"rgb": [
+					23,
+					23,
+					23
+				],
+				"hsl": [
+					0,
+					0,
+					9
+				]
+			},
+			"dawn": {
+				"hex": "#171717",
+				"rgb": [
+					23,
+					23,
+					23
+				],
+				"hsl": [
+					0,
+					0,
+					9
+				]
+			}
+		},
+		{
+			"slug": "primary-hover",
+			"name": "Primary Hover",
+			"use": "Primary fill while hovered, one step brighter",
+			"dusk": {
+				"hex": "#fa6a07",
+				"rgb": [
+					250,
+					106,
+					7
+				],
+				"hsl": [
+					24,
+					96,
+					50
+				]
+			},
+			"dawn": {
+				"hex": "#fa6a07",
+				"rgb": [
+					250,
+					106,
+					7
+				],
+				"hsl": [
+					24,
+					96,
+					50
+				]
+			}
+		},
+		{
+			"slug": "primary-focus",
+			"name": "Primary Focus",
+			"use": "Primary fill while pressed or focused, the deepest step",
+			"dusk": {
+				"hex": "#d65905",
+				"rgb": [
+					214,
+					89,
+					5
+				],
+				"hsl": [
+					24,
+					95,
+					43
+				]
+			},
+			"dawn": {
+				"hex": "#d65905",
+				"rgb": [
+					214,
+					89,
+					5
+				],
+				"hsl": [
+					24,
+					95,
+					43
+				]
+			}
+		},
+		{
+			"slug": "ink",
+			"name": "Ink",
+			"use": "Headings and body text",
+			"dusk": {
+				"hex": "#f7f8f8",
+				"rgb": [
+					247,
+					248,
+					248
+				],
+				"hsl": [
+					180,
+					7,
+					97
+				]
+			},
+			"dawn": {
+				"hex": "#171717",
+				"rgb": [
+					23,
+					23,
+					23
+				],
+				"hsl": [
+					0,
+					0,
+					9
+				]
+			}
+		},
+		{
+			"slug": "ink-muted",
+			"name": "Ink Muted",
+			"use": "Secondary prose, unselected chips, code",
+			"dusk": {
+				"hex": "#d0d6e0",
+				"rgb": [
+					208,
+					214,
+					224
+				],
+				"hsl": [
+					217,
+					21,
+					85
+				]
+			},
+			"dawn": {
+				"hex": "#4d4d4d",
+				"rgb": [
+					77,
+					77,
+					77
+				],
+				"hsl": [
+					0,
+					0,
+					30
+				]
+			}
+		},
+		{
+			"slug": "ink-subtle",
+			"name": "Ink Subtle",
+			"use": "Footer links, capsule labels, metadata",
+			"dusk": {
+				"hex": "#8a8f98",
+				"rgb": [
+					138,
+					143,
+					152
+				],
+				"hsl": [
+					219,
+					6,
+					57
+				]
+			},
+			"dawn": {
+				"hex": "#606060",
+				"rgb": [
+					96,
+					96,
+					96
+				],
+				"hsl": [
+					0,
+					0,
+					38
+				]
+			}
+		},
+		{
+			"slug": "canvas",
+			"name": "Canvas",
+			"use": "Page ground: near-black on dusk, off-white on dawn",
+			"dusk": {
+				"hex": "#010102",
+				"rgb": [
+					1,
+					1,
+					2
+				],
+				"hsl": [
+					240,
+					33,
+					1
+				]
+			},
+			"dawn": {
+				"hex": "#f8f8f8",
+				"rgb": [
+					248,
+					248,
+					248
+				],
+				"hsl": [
+					0,
+					0,
+					97
+				]
+			}
+		},
+		{
+			"slug": "surface-1",
+			"name": "Surface 1",
+			"use": "First lift off the canvas, for tiles and cards",
+			"dusk": {
+				"hex": "#0f1011",
+				"rgb": [
+					15,
+					16,
+					17
+				],
+				"hsl": [
+					210,
+					6,
+					6
+				]
+			},
+			"dawn": {
+				"hex": "#ffffff",
+				"rgb": [
+					255,
+					255,
+					255
+				],
+				"hsl": [
+					0,
+					0,
+					100
+				]
+			}
+		},
+		{
+			"slug": "surface-2",
+			"name": "Surface 2",
+			"use": "Second surface step, for nested panels",
+			"dusk": {
+				"hex": "#141516",
+				"rgb": [
+					20,
+					21,
+					22
+				],
+				"hsl": [
+					210,
+					5,
+					8
+				]
+			},
+			"dawn": {
+				"hex": "#ededed",
+				"rgb": [
+					237,
+					237,
+					237
+				],
+				"hsl": [
+					0,
+					0,
+					93
+				]
+			}
+		},
+		{
+			"slug": "surface-3",
+			"name": "Surface 3",
+			"use": "Third surface step, for wells and inset blocks",
+			"dusk": {
+				"hex": "#18191a",
+				"rgb": [
+					24,
+					25,
+					26
+				],
+				"hsl": [
+					210,
+					4,
+					10
+				]
+			},
+			"dawn": {
+				"hex": "#e4e4e4",
+				"rgb": [
+					228,
+					228,
+					228
+				],
+				"hsl": [
+					0,
+					0,
+					89
+				]
+			}
+		},
+		{
+			"slug": "surface-4",
+			"name": "Surface 4",
+			"use": "Deepest surface step, for the strongest separation",
+			"dusk": {
+				"hex": "#191a1b",
+				"rgb": [
+					25,
+					26,
+					27
+				],
+				"hsl": [
+					210,
+					4,
+					10
+				]
+			},
+			"dawn": {
+				"hex": "#dbdbdb",
+				"rgb": [
+					219,
+					219,
+					219
+				],
+				"hsl": [
+					0,
+					0,
+					86
+				]
+			}
+		},
+		{
+			"slug": "hairline",
+			"name": "Hairline",
+			"use": "Default 1px border and divider",
+			"dusk": {
+				"hex": "#23252a",
+				"rgb": [
+					35,
+					37,
+					42
+				],
+				"hsl": [
+					223,
+					9,
+					15
+				]
+			},
+			"dawn": {
+				"hex": "#d9d9d9",
+				"rgb": [
+					217,
+					217,
+					217
+				],
+				"hsl": [
+					0,
+					0,
+					85
+				]
+			}
+		},
+		{
+			"slug": "hairline-strong",
+			"name": "Hairline Strong",
+			"use": "Border that needs more presence than a hairline",
+			"dusk": {
+				"hex": "#34343a",
+				"rgb": [
+					52,
+					52,
+					58
+				],
+				"hsl": [
+					240,
+					5,
+					22
+				]
+			},
+			"dawn": {
+				"hex": "#c6c6c6",
+				"rgb": [
+					198,
+					198,
+					198
+				],
+				"hsl": [
+					0,
+					0,
+					78
+				]
+			}
+		},
+		{
+			"slug": "hairline-tertiary",
+			"name": "Hairline Tertiary",
+			"use": "Strongest border, for controls and emphasis rules",
+			"dusk": {
+				"hex": "#3e3e44",
+				"rgb": [
+					62,
+					62,
+					68
+				],
+				"hsl": [
+					240,
+					5,
+					25
+				]
+			},
+			"dawn": {
+				"hex": "#b3b3b3",
+				"rgb": [
+					179,
+					179,
+					179
+				],
+				"hsl": [
+					0,
+					0,
+					70
+				]
+			}
+		},
+		{
+			"slug": "inverse-canvas",
+			"name": "Inverse Canvas",
+			"use": "Ground for inverted bands: white on dusk, near-black on dawn",
+			"dusk": {
+				"hex": "#ffffff",
+				"rgb": [
+					255,
+					255,
+					255
+				],
+				"hsl": [
+					0,
+					0,
+					100
+				]
+			},
+			"dawn": {
+				"hex": "#171717",
+				"rgb": [
+					23,
+					23,
+					23
+				],
+				"hsl": [
+					0,
+					0,
+					9
+				]
+			}
+		},
+		{
+			"slug": "inverse-ink",
+			"name": "Inverse Ink",
+			"use": "Text on an inverted band: black on dusk, white on dawn",
+			"dusk": {
+				"hex": "#000000",
+				"rgb": [
+					0,
+					0,
+					0
+				],
+				"hsl": [
+					0,
+					0,
+					0
+				]
+			},
+			"dawn": {
+				"hex": "#ffffff",
+				"rgb": [
+					255,
+					255,
+					255
+				],
+				"hsl": [
+					0,
+					0,
+					100
+				]
+			}
+		}
+	],
+	"terminal": [
+		{
+			"slug": "black",
+			"name": "Black",
+			"use": "Background tone for blocks and badges",
+			"dusk": {
+				"hex": "#18191a",
+				"rgb": [
+					24,
+					25,
+					26
+				],
+				"hsl": [
+					210,
+					4,
+					10
+				]
+			},
+			"dawn": {
+				"hex": "#dbdbdb",
+				"rgb": [
+					219,
+					219,
+					219
+				],
+				"hsl": [
+					0,
+					0,
+					86
+				]
+			}
+		},
+		{
+			"slug": "red",
+			"name": "Red",
+			"use": "Errors, deletions, failing tests",
+			"dusk": {
+				"hex": "#e04a3c",
+				"rgb": [
+					224,
+					74,
+					60
+				],
+				"hsl": [
+					5,
+					73,
+					56
+				]
+			},
+			"dawn": {
+				"hex": "#b02f24",
+				"rgb": [
+					176,
+					47,
+					36
+				],
+				"hsl": [
+					5,
+					66,
+					42
+				]
+			}
+		},
+		{
+			"slug": "green",
+			"name": "Green",
+			"use": "Success, additions, passing tests",
+			"dusk": {
+				"hex": "#8db05a",
+				"rgb": [
+					141,
+					176,
+					90
+				],
+				"hsl": [
+					84,
+					35,
+					52
+				]
+			},
+			"dawn": {
+				"hex": "#4a6f1f",
+				"rgb": [
+					74,
+					111,
+					31
+				],
+				"hsl": [
+					88,
+					56,
+					28
+				]
+			}
+		},
+		{
+			"slug": "yellow",
+			"name": "Yellow",
+			"use": "Warnings, modified files",
+			"dusk": {
+				"hex": "#f0b92a",
+				"rgb": [
+					240,
+					185,
+					42
+				],
+				"hsl": [
+					43,
+					87,
+					55
+				]
+			},
+			"dawn": {
+				"hex": "#8a5f00",
+				"rgb": [
+					138,
+					95,
+					0
+				],
+				"hsl": [
+					41,
+					100,
+					27
+				]
+			}
+		},
+		{
+			"slug": "blue",
+			"name": "Blue",
+			"use": "Directories, links, info",
+			"dusk": {
+				"hex": "#6f93c0",
+				"rgb": [
+					111,
+					147,
+					192
+				],
+				"hsl": [
+					213,
+					39,
+					59
+				]
+			},
+			"dawn": {
+				"hex": "#2f5a8f",
+				"rgb": [
+					47,
+					90,
+					143
+				],
+				"hsl": [
+					213,
+					51,
+					37
+				]
+			}
+		},
+		{
+			"slug": "magenta",
+			"name": "Magenta",
+			"use": "Keywords, branches, special files",
+			"dusk": {
+				"hex": "#c08a9a",
+				"rgb": [
+					192,
+					138,
+					154
+				],
+				"hsl": [
+					342,
+					30,
+					65
+				]
+			},
+			"dawn": {
+				"hex": "#8a4a5c",
+				"rgb": [
+					138,
+					74,
+					92
+				],
+				"hsl": [
+					343,
+					30,
+					42
+				]
+			}
+		},
+		{
+			"slug": "cyan",
+			"name": "Cyan",
+			"use": "Hunks, types, secondary info",
+			"dusk": {
+				"hex": "#6aaea6",
+				"rgb": [
+					106,
+					174,
+					166
+				],
+				"hsl": [
+					173,
+					30,
+					55
+				]
+			},
+			"dawn": {
+				"hex": "#22665f",
+				"rgb": [
+					34,
+					102,
+					95
+				],
+				"hsl": [
+					174,
+					50,
+					27
+				]
+			}
+		},
+		{
+			"slug": "white",
+			"name": "White",
+			"use": "Secondary text",
+			"dusk": {
+				"hex": "#d0d6e0",
+				"rgb": [
+					208,
+					214,
+					224
+				],
+				"hsl": [
+					217,
+					21,
+					85
+				]
+			},
+			"dawn": {
+				"hex": "#4d4d4d",
+				"rgb": [
+					77,
+					77,
+					77
+				],
+				"hsl": [
+					0,
+					0,
+					30
+				]
+			}
+		},
+		{
+			"slug": "bright-black",
+			"name": "Bright Black",
+			"use": "Comments, hints, autosuggestions",
+			"dusk": {
+				"hex": "#8a8f98",
+				"rgb": [
+					138,
+					143,
+					152
+				],
+				"hsl": [
+					219,
+					6,
+					57
+				]
+			},
+			"dawn": {
+				"hex": "#606060",
+				"rgb": [
+					96,
+					96,
+					96
+				],
+				"hsl": [
+					0,
+					0,
+					38
+				]
+			}
+		},
+		{
+			"slug": "bright-red",
+			"name": "Bright Red",
+			"use": "Errors, deletions, failing tests",
+			"dusk": {
+				"hex": "#e66b60",
+				"rgb": [
+					230,
+					107,
+					96
+				],
+				"hsl": [
+					5,
+					73,
+					64
+				]
+			},
+			"dawn": {
+				"hex": "#90271d",
+				"rgb": [
+					144,
+					39,
+					29
+				],
+				"hsl": [
+					5,
+					66,
+					34
+				]
+			}
+		},
+		{
+			"slug": "bright-green",
+			"name": "Bright Green",
+			"use": "Success, additions, passing tests",
+			"dusk": {
+				"hex": "#a0bd75",
+				"rgb": [
+					160,
+					189,
+					117
+				],
+				"hsl": [
+					84,
+					35,
+					60
+				]
+			},
+			"dawn": {
+				"hex": "#355016",
+				"rgb": [
+					53,
+					80,
+					22
+				],
+				"hsl": [
+					88,
+					57,
+					20
+				]
+			}
+		},
+		{
+			"slug": "bright-yellow",
+			"name": "Bright Yellow",
+			"use": "Warnings, modified files",
+			"dusk": {
+				"hex": "#f3c44f",
+				"rgb": [
+					243,
+					196,
+					79
+				],
+				"hsl": [
+					43,
+					87,
+					63
+				]
+			},
+			"dawn": {
+				"hex": "#614200",
+				"rgb": [
+					97,
+					66,
+					0
+				],
+				"hsl": [
+					41,
+					100,
+					19
+				]
+			}
+		},
+		{
+			"slug": "bright-blue",
+			"name": "Bright Blue",
+			"use": "Directories, links, info",
+			"dusk": {
+				"hex": "#8aa8cc",
+				"rgb": [
+					138,
+					168,
+					204
+				],
+				"hsl": [
+					213,
+					39,
+					67
+				]
+			},
+			"dawn": {
+				"hex": "#244670",
+				"rgb": [
+					36,
+					70,
+					112
+				],
+				"hsl": [
+					213,
+					51,
+					29
+				]
+			}
+		},
+		{
+			"slug": "bright-magenta",
+			"name": "Bright Magenta",
+			"use": "Keywords, branches, special files",
+			"dusk": {
+				"hex": "#cfa5b2",
+				"rgb": [
+					207,
+					165,
+					178
+				],
+				"hsl": [
+					341,
+					30,
+					73
+				]
+			},
+			"dawn": {
+				"hex": "#713d4b",
+				"rgb": [
+					113,
+					61,
+					75
+				],
+				"hsl": [
+					344,
+					30,
+					34
+				]
+			}
+		},
+		{
+			"slug": "bright-cyan",
+			"name": "Bright Cyan",
+			"use": "Hunks, types, secondary info",
+			"dusk": {
+				"hex": "#84bdb6",
+				"rgb": [
+					132,
+					189,
+					182
+				],
+				"hsl": [
+					173,
+					30,
+					63
+				]
+			},
+			"dawn": {
+				"hex": "#184944",
+				"rgb": [
+					24,
+					73,
+					68
+				],
+				"hsl": [
+					174,
+					51,
+					19
+				]
+			}
+		},
+		{
+			"slug": "bright-white",
+			"name": "Bright White",
+			"use": "Emphasised text",
+			"dusk": {
+				"hex": "#f7f8f8",
+				"rgb": [
+					247,
+					248,
+					248
+				],
+				"hsl": [
+					180,
+					7,
+					97
+				]
+			},
+			"dawn": {
+				"hex": "#171717",
+				"rgb": [
+					23,
+					23,
+					23
+				],
+				"hsl": [
+					0,
+					0,
+					9
+				]
+			}
+		}
+	]
+}
