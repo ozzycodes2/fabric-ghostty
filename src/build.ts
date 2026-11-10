@@ -24,13 +24,21 @@ export interface BuildOptions {
 export async function build({ palettePath, templatePath, outDir }: BuildOptions): Promise<void> {
   const palette = await loadPalette(palettePath);
   const template = readFileSync(templatePath, "utf8");
-  mkdirSync(outDir, { recursive: true });
-  for (const variant of ["dusk", "dawn"] as const) {
+  const files = (["dusk", "dawn"] as const).map((variant) => {
     const text = render(template, palette, variant);
-    const count = text.split("\n").filter((l) => l.startsWith("palette = ")).length;
-    if (count !== 16) throw new Error(`fabric-${variant}: expected 16 palette lines, found ${count}`);
-    writeFileSync(join(outDir, `fabric-${variant}`), text);
-  }
+    const indices = text
+      .split("\n")
+      .filter((l) => l.startsWith("palette = "))
+      .map((l) => l.slice("palette = ".length).split("=")[0])
+      .join(",");
+    const expected = Array.from({ length: 16 }, (_, i) => i).join(",");
+    if (indices !== expected) {
+      throw new Error(`fabric-${variant}: expected palette indices 0-15 in order, found [${indices}]`);
+    }
+    return [`fabric-${variant}`, text] as const;
+  });
+  mkdirSync(outDir, { recursive: true });
+  for (const [name, text] of files) writeFileSync(join(outDir, name), text);
 }
 
 export async function main(argv: string[], outDir: string): Promise<number> {

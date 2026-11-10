@@ -4,12 +4,17 @@ Fabric is a colour theme with two variants, Dusk and Dawn. This is the port for 
 
 ## Usage
 
-Copy the theme files into your Ghostty themes directory:
+Download the theme files into your Ghostty themes directory:
 
 ```sh
 mkdir -p ~/.config/ghostty/themes
-cp dist/* ~/.config/ghostty/themes/
+for v in dusk dawn; do
+  curl -fsSL -o ~/.config/ghostty/themes/fabric-$v \
+    https://raw.githubusercontent.com/ozzycodes2/fabric-ghostty/main/dist/fabric-$v
+done
 ```
+
+From a clone, `cp dist/* ~/.config/ghostty/themes/` does the same.
 
 The theme files are named `fabric-dusk` and `fabric-dawn`. Then set the theme in your Ghostty config, following the system appearance:
 

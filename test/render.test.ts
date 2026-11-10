@@ -31,7 +31,11 @@ describe("render", () => {
     expect(() => render("x = $nope\n", palette, "dusk")).toThrow(/unknown token \$nope/);
   });
   it("prefers the longest token match", () => {
-    expect(render("$term.bright-black", palette, "dusk")).toMatch(/^#[0-9a-f]{6}\n$/);
+    expect(render("$term.bright-black", palette, "dusk")).toBe("#8a8f98\n");
+  });
+  it("throws on leftover tokens the token pattern does not match", () => {
+    expect(() => render("x = $Canvas\n", palette, "dusk")).toThrow(/unknown token \$Canvas/);
+    expect(() => render("x = ${canvas}\n", palette, "dusk")).toThrow(/unknown token \$\{canvas\}/);
   });
   it("throws on unknown variant", () => {
     expect(() => render("$id", palette, "dim" as "dusk")).toThrow(/unknown variant/);
@@ -53,7 +57,15 @@ describe("build", () => {
     const out = mkdtempSync(join(tmpdir(), "fabric-ghostty-"));
     const bad = join(out, "t");
     (await import("node:fs")).writeFileSync(bad, "palette = 0=$term.black\n");
-    await expect(build({ palettePath: fixturePath, templatePath: bad, outDir: out })).rejects.toThrow(/expected 16 palette lines/);
+    await expect(build({ palettePath: fixturePath, templatePath: bad, outDir: out })).rejects.toThrow(/expected palette indices 0-15/);
+    expect(readdirSync(out)).toEqual(["t"]);
+  });
+  it("fails when 16 palette lines repeat an index", async () => {
+    const out = mkdtempSync(join(tmpdir(), "fabric-ghostty-"));
+    const bad = join(out, "t");
+    const lines = Array.from({ length: 16 }, (_, i) => `palette = ${i === 15 ? 1 : i}=$term.black`);
+    (await import("node:fs")).writeFileSync(bad, `${lines.join("\n")}\n`);
+    await expect(build({ palettePath: fixturePath, templatePath: bad, outDir: out })).rejects.toThrow(/found \[0,1,.*,14,1\]/);
   });
   it("builds the pinned url", () => {
     expect(paletteUrl()).toBe(`https://raw.githubusercontent.com/ozzycodes2/fabric-theme/${PALETTE_TAG}/dist/palette.json`);

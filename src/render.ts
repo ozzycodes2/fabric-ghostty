@@ -1,6 +1,6 @@
-export type Color = { hex: string; rgb: string; hsl: string };
+export type Color = { hex: string; rgb: [number, number, number]; hsl: [number, number, number] };
 export type Role = { slug: string; name: string; use: string; dusk: Color; dawn: Color };
-export type Variant = { slug: "dusk" | "dawn"; id: string; name: string; appearance: string };
+export type Variant = { slug: "dusk" | "dawn"; id: string; name: string; appearance: "dark" | "light" };
 export type Palette = { version: string; variants: Variant[]; ui: Role[]; terminal: Role[] };
 
 const TOKEN = /\$[a-z][a-z0-9.-]*/g;
@@ -20,5 +20,7 @@ export function render(template: string, palette: Palette, variant: "dusk" | "da
     if (value === undefined) throw new Error(`unknown token ${match}`);
     return value;
   });
+  const leftover = out.match(/\$\S*/);
+  if (leftover) throw new Error(`unknown token ${leftover[0]}`);
   return `${out.replace(/\n+$/, "")}\n`;
 }
