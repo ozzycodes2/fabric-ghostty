@@ -1,6 +1,6 @@
 # Fabric for Ghostty
 
-Fabric is a colour theme with two variants, Dusk and Dawn. This is the port for [Ghostty](https://ghostty.org).
+Fabric is a color theme with two variants, Dusk and Dawn. This is the port for [Ghostty](https://ghostty.org).
 
 ## Usage
 
