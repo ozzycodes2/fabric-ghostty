@@ -15,7 +15,7 @@ describe("render", () => {
   const dawn = render(template, palette, "dawn");
 
   it("renders dusk values", () => {
-    expect(dusk).toContain("background = #010102");
+    expect(dusk).toContain("background = #101214");
     expect(dusk).toContain("palette = 1=#e04a3c");
     expect(dusk).toContain("selection-foreground = #171717");
     expect(dusk).toContain("# Fabric Dusk");
@@ -51,7 +51,7 @@ describe("build", () => {
     const out = mkdtempSync(join(tmpdir(), "fabric-ghostty-"));
     await build({ palettePath: fixturePath, templatePath: join(import.meta.dirname, "../template/fabric"), outDir: out });
     expect(readdirSync(out).sort()).toEqual(["fabric-dawn", "fabric-dusk"]);
-    expect(readFileSync(join(out, "fabric-dusk"), "utf8")).toContain("background = #010102");
+    expect(readFileSync(join(out, "fabric-dusk"), "utf8")).toContain("background = #101214");
   });
   it("fails when a file lacks 16 palette lines", async () => {
     const out = mkdtempSync(join(tmpdir(), "fabric-ghostty-"));

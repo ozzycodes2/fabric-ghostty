@@ -1,5 +1,5 @@
 # Fabric Dusk
-palette = 0=#18191a
+palette = 0=#212324
 palette = 1=#e04a3c
 palette = 2=#8db05a
 palette = 3=#f0b92a
@@ -15,7 +15,7 @@ palette = 12=#8aa8cc
 palette = 13=#cfa5b2
 palette = 14=#84bdb6
 palette = 15=#f7f8f8
-background = #010102
+background = #101214
 foreground = #f7f8f8
 cursor-color = #ff6a13
 cursor-text = #171717
