@@ -1,6 +1,6 @@
 # Fabric for Ghostty
 
-Fabric is a color theme with two variants, Dusk and Dawn. This is the port for [Ghostty](https://ghostty.org).
+Fabric is a color theme with two variants, Dusk and Dawn. This is the integration for [Ghostty](https://ghostty.org).
 
 ## Usage
 
@@ -38,7 +38,7 @@ Structure inspired by the [Rosé Pine port for Ghostty](https://github.com/rose-
 
 ## Contributing
 
-The theme files in `dist/` are generated from [`template/fabric`](template/fabric) and the Fabric palette, pinned to the `v0.1.1` tag of [fabric-theme](https://github.com/ozzycodes2/fabric-theme). To rebuild:
+The theme files in `dist/` are generated from [`template/fabric`](template/fabric) and the Fabric palette, pinned to the `v0.2.0` tag of [fabric-theme](https://github.com/ozzycodes2/fabric-theme). To rebuild:
 
 ```sh
 pnpm install && pnpm build
