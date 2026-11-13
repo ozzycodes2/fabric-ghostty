@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ozzycodes2/fabric-theme/main/assets/wordmark-dusk.svg">
+    <img src="https://raw.githubusercontent.com/ozzycodes2/fabric-theme/main/assets/wordmark.svg" alt="fabric" width="200">
+  </picture>
+</p>
+
 # Fabric for Ghostty
 
 Fabric is a color theme with two variants, Dusk and Dawn. This is the integration for [Ghostty](https://ghostty.org).
