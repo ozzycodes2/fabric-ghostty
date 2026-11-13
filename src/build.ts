@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { render } from "./render.ts";
 import type { Palette } from "./render.ts";
 
-export const PALETTE_TAG = "v0.2.1";
+export const PALETTE_TAG = "v0.2.2";
 
 export const paletteUrl = (): string =>
   `https://raw.githubusercontent.com/ozzycodes2/fabric-theme/${PALETTE_TAG}/dist/palette.json`;

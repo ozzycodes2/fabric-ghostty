@@ -38,7 +38,7 @@ Structure inspired by the [Rosé Pine port for Ghostty](https://github.com/rose-
 
 ## Contributing
 
-The theme files in `dist/` are generated from [`template/fabric`](template/fabric) and the Fabric palette, pinned to the `v0.2.1` tag of [fabric-theme](https://github.com/ozzycodes2/fabric-theme). To rebuild:
+The theme files in `dist/` are generated from [`template/fabric`](template/fabric) and the Fabric palette, pinned to the `v0.2.2` tag of [fabric-theme](https://github.com/ozzycodes2/fabric-theme). To rebuild:
 
 ```sh
 pnpm install && pnpm build
